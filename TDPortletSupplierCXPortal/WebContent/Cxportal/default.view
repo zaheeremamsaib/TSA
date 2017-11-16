@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='Cxportaldefaultviewview' />
+  <property name='preferencesBean' value='Cxportal' />
+  <design-time-attribute name='convertedFile' value='true' />
+  <design-time-attribute name='portlet' value='CXPortal' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='com.webmethods.caf.faces.command.CommandForm' renderer-type='com.webmethods.caf.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.component.portlet.PortletInclude' renderer-type='com.webmethods.caf.faces.render.html.output.PortletIncludeRenderer'>
+      <property name='id' value='portletInclude' />
+      <property name='portlet' value='/supplierMenu' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.output.Frame' renderer-type='com.webmethods.caf.faces.output.Frame'>
+      <property name='height' value='750px' />
+      <property name='id' value='frame' />
+      <property name='value' value='http://www.myrelease.info/ReleaseNet2/web/login.jsp' />
+      <property name='width' value='1100px' />
+    </control>
+  </control>
+</view>
